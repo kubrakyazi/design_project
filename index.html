@@ -11,73 +11,89 @@
             border-collapse: collapse;
             table-layout: fixed;
             margin: auto;
-            width: 90%;
+            width: 80%;
             font-family: Times, "Times New Roman", serif
-        
         }
-        .project-name{
-            font-weight: 600;
+
+        .project-name {
+            font-weight: bold;
             padding-left: 5px;
         }
-        .first-table{
+   
+        .first-table {
             background-color: #005694;
             border: 1px solid;
-            opacity:0.9;
+            font-size: 22px;
         }
-        .table-title{
 
+        .table-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            background-color: grey;
+            opacity: 0.9;
         }
-        table td{
+
+        table td {
             padding-left: 5px;
+        }
+
+        table td {
+            height: 35px;
+        }
+        .column-title{
+            font-weight: bold;
         }
     </style>
 </head>
 
 <body>
-    <table class="first-table" border="1">
+    <table class="first-table" border="1 ">
         <tr>
-            <td id="first-table-th" style="text-align:left;width:16.6%"><span class="project-name">Proje No:</span><span class="project-no"> 279952</span></td>
-            <td style="text-align:left"><span class="project-name">Proje Adı:</span><span class="project-no"> TT MobilPort FrontEnd</span> </td>
+            <td id="first-table-th" style="text-align:left;width:16.6%"><span class="project-name">Proje No:</span><span
+                    class="project-no"> 279952</span></td>
+            <td style="text-align:left"><span class="project-name">Proje Adı:</span><span class="project-no"> TT
+                    MobilPort FrontEnd</span> </td>
         </tr>
     </table>
-
     <br>
+
     <table border="1">
-        <caption class="table-title">Projeye Genel Bakış</caption>
+        <caption class="table-title" style="text-align:left;" >Projeye Genel Bakış</caption>
         <tr>
-            <td style="text-align:left;">Proje Grubu</td>
-            <td >Kullanıcı Deneyimi ve CrossPlatform</td>
-            <td>Proje Tipi</td>
+            <td class="column-title" style="text-align:left;">Proje Grubu</td>
+            <td>Kullanıcı Deneyimi ve  Cross Platform</td>
+            <td class="column-title">Proje Tipi</td>
             <td>Üretim.Yazılım Geliştirme</td>
-            <td>Proje Segmenti</td>
+            <td class="column-title">Proje Segmenti</td>
             <td>C (9)</td>
         </tr>
         <tr>
-            <td style="text-align:left">Proje Yöneticisi</td>
+            <td class="column-title" style="text-align:left">Proje Yöneticisi</td>
             <td>Gizem Şenalp</td>
-            <td>Proje Aşaması</td>
+            <td class="column-title">Proje Aşaması</td>
             <td>Yürütme</td>
-            <td>Stratejik Proje</td>
+            <td class="column-title">Stratejik Proje</td>
             <td>Hayır</td>
         </tr>
         <tr>
-            <td>X </td>
-            <td>X </td>
-            <td>X </td>
-            <td>X </td>
-            <td>X </td>
+            <td class="column-title"></td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
             <td>X </td>
         </tr>
         <tr>
-            <td style="text-align:left">Tamamlanma % (Takvim)</td>
-            <td style="text-align:left">Tamamlanma % (Efor)</td>
+            <td class="column-title" style="text-align:left">Tamamlanma % (Takvim)</td>
+            <td class="column-title" style="text-align:left">Tamamlanma % (Efor)</td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr>
-            <td style="text-align:center">79.83</td>
+            <td class="column-title" style="text-align:center">79.83</td>
             <td style="text-align:center">82.57</td>
             <td></td>
             <td></td>
@@ -88,86 +104,84 @@
     </table>
     <br>
 
-    <table border="1">
-        <caption>Proje Performansı</caption>
+    <table border="1" >
+        <caption class="table-title" style="text-align:left;">Proje Performansı</caption>
         <tr>
-            <td>X</td>
-            <td>X</td>
-            <td>Proje Teklif Bilgileri</td>
-            <td>Baseline 0</td>
-            <td>Baseline Güncel</td>
-            <td>Gerçekleşen</td>
-            <td>Öngörülen</td>
+            <td class="column-title" style="text-align:center" ></td>
+            <td></td>
+            <td class="column-title" style="text-align:center">Proje Teklif Bilgileri</td>
+            <td class="column-title" style="text-align:center">Baseline 0</td>
+            <td class="column-title" style="text-align:center">Baseline Güncel</td>
+            <td class="column-title" style="text-align:center">Gerçekleşen</td>
+            <td class="column-title" style="text-align:center">Öngörülen</td>
         </tr>
         <tr>
-            <td>Takvim</td>
-            <td>Tamamlanma Tarihi</td>
-            <td>31-08-2021</td>
-            <td>30-06-2021</td>
-            <td>30-06-2021</td>
-            <td>X</td>
-            <td>30-06-2021</td>
+            <td class="column-title">Takvim</td>
+            <td class="column-title">Tamamlanma Tarihi</td>
+            <td style="text-align:center">31-08-2021</td>
+            <td style="text-align:center">30-06-2021</td>
+            <td style="text-align:center">30-06-2021</td>
+            <td style="text-align:center"></td>
+            <td style="text-align:center">30-06-2021</td>
         </tr>
         <tr>
-            <td>Efor</td>
-            <td>Adam Gün</td>
-            <td>378</td>
-            <td>436.75</td>
-            <td>436.75</td>
-            <td>332.69</td>
-            <td>436.75</td>
+            <td class="column-title">Efor</td>
+            <td class="column-title">Adam Gün</td>
+            <td style="text-align:center">378</td>
+            <td style="text-align:center">436.75</td>
+            <td style="text-align:center">436.75</td>
+            <td style="text-align:center">332.69</td>
+            <td style="text-align:center">436.75</td>
         </tr>
 
     </table>
     <br>
-    <br>
 
-
-    <table border="1">
-        <caption>Finansal</caption>
+    <table border="1" style="text-align:center">
+        <caption class="table-title" style="text-align:left;" >Finansal</caption>
         <tr>
-            <td>Gelir</td>
+            <td class="column-title">Gelir</td>
             <td>TL</td>
             <td>640,080</td>
-            <td>X</td>
-            <td>X</td>
+            <td></td>
+            <td></td>
             <td>523,001</td>
             <td>640,000</td>
         </tr>
         <tr>
-            <td>İç Maliyet</td>
+            <td class="column-title">İç Maliyet</td>
             <td>TL</td>
             <td>550,812</td>
-            <td>X</td>
-            <td>X</td>
+            <td></td>
+            <td></td>
             <td>452,653</td>
             <td>590,537</td>
 
         </tr>
         <tr>
-            <td>Dış Maliyet</td>
+            <td class="column-title">Dış Maliyet</td>
             <td>TL</td>
             <td>0</td>
-            <td>X</td>
-            <td>X</td>
+            <td></td>
+            <td></td>
             <td>0</td>
             <td>0</td>
         </tr>
         <tr>
-            <td>Kar</td>
+            <td class="column-title">Kar</td>
             <td>TL</td>
             <td>89268</td>
-            <td>X</td>
-            <td>X</td>
+            <td></td>
+            <td></td>
             <td>70,348</td>
             <td>49,463</td>
         </tr>
         <tr>
-            <td>Kar Marjı</td>
+            <td class="column-title">Kar Marjı</td>
             <td>%</td>
             <td>14</td>
-            <td>X</td>
-            <td>X</td>
+            <td></td>
+            <td></td>
             <td>13.45</td>
             <td>7.73</td>
         </tr>
@@ -177,9 +191,9 @@
     <br>
 
     <table border="1">
-        <caption>Proje Durum Özeti</caption>
+        <caption class="table-title" style="text-align:left;">Proje Durum Özeti</caption>
         <tr>
-            <td>Tamamlanan Çalışmalar: FAZ 1 Entegrasyonlar: Netmera / SMS / AD Prod Kurulumları Faz 1 kapsamında
+            <td style="padding:10px">Tamamlanan Çalışmalar: FAZ 1 Entegrasyonlar: Netmera / SMS / AD Prod Kurulumları Faz 1 kapsamında
                 belirlenen talepler İç Fonksiyonel testler TT Güvenlik – Kaynak kod testleri Canlıya Alım– 30.12.2020
                 Faz 1 Kapanış – 17.01.2021 FAZ 2 SAP entegrasyonu tasarım çalışmaları Analiz çalışmaları Faz 2 – Push
                 Notification entegrasyonu Faz 2 – Regresyon testleri Faz 2 – UAT /Performans Testi / Güvenlik Testi Faz
@@ -189,29 +203,39 @@
                 Faz3 – Devreye Alım Proje Kapanışı</td>
         </tr>
     </table>
-</body>
 <br>
-<table border="1">
+
+<table border="1" class="column-title" style="text-align:center">
     <tr>
-        <td>Temel Kilometre Taşları / Teslimatlar</td>
-        <td>Onaylanan Tamamlama</td>
-        <td>Öngörülen Tamamlama</td>
-        <td>Özet</td>
+        <td >Temel Kilometre Taşları / Teslimatlar</td>
+        <td >Onaylanan Tamamlama</td>
+        <td >Öngörülen Tamamlama</td>
+        <td >Özet</td>
     </tr>
 </table>
 <br>
-<table border="1">
+<table border="1" >
     <tr>
-        <td>Bu Raporlama Döneminde Tamamlananlar</td>
-        <td>Sonraki Raporlama DönemindeTamamlanacaklar</td>
+        <td class="column-title">Bu Raporlama Döneminde Tamamlananlar</td>
+        <td  class="column-title">Sonraki Raporlama DönemindeTamamlanacaklar</td>
     </tr>
     <tr>
-        <td>XYZ</td>
-        <td>XYZ</td>
+        <td>FAZ 2 <br>
+            Faz 2 – Go Live (19.03.2021 – erken devreye alım) <br>
+            Faz 2 – Lansman (28.04.2021) <br>
+            FAZ 3 <br>
+            Faz 3 – Analiz <br>
+            Faz 3 – Proje Planı Netleştirme<br>
+        </td>
+        <td>Faz 3 – Geliştirme (devam ediyor) (UAT veGüvenlik Testleri için 4 Haziran yerine 24 Mayıs'taerken teslimat yapılacaktır) <br>
+            Faz 3 – Fonksiyonel Testler (devam ediyor -Regresyon Testleri dahil 21 Mayıs'tatamamlanacak) <br>
+            Faz 3 - Performans Testleri, Güvenlik Testleri veUAT (başlayacak) <br>
+        </td>
     </tr>
 </table>
 <br>
-<table border="1">
+<br>
+<table class="column-title" border="1">
     <tr>
         <td>ID</td>
         <td>Tarih</td>
@@ -224,18 +248,21 @@
         <td>Durum</td>
     </tr>
 </table>
-<table border="1">
+<br>
+<table class="column-title" border="1">
     <tr>
-        <td>ID</td>
+        <td >ID</td>
         <td>Tarih</td>
         <td>Sorun Açıklaması</td>
         <td>Sorun Kategorisi - AltKategori</td>
-        <td>Olasılık</td>
-        <td>Etki</td>
+        <td>Önem Derecesi</td>
+        <td></td>
         <td>Kaçınma / AzaltmaPlanı</td>
         <td>Sahibi</td>
         <td>Durum</td>
     </tr>
 </table>
+
+</body>
 
 </html>
