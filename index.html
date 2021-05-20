@@ -14,117 +14,134 @@
             width: 80%;
             font-family: Times, "Times New Roman", serif
         }
-   
+
         .project-name {
             font-weight: bold;
-            padding-left: 5px;
+            padding-left:7px;
+            font-size: 22px
         }
 
         .first-table {
             background-color: #005694;
             border: 1px solid;
-
+            text-align:left;
+            color:white
         }
 
         .table-title {
-            font-size: 22px;
+            font-size: 20px;
             font-weight: bold;
             margin-bottom: 12px;
             background-color: #AED6F1;
             opacity: 0.9;
+            padding: 2px;
+            padding-left: 7px;
+            text-align:left
         }
 
-        table td {
-            padding-left: 5px;
-            height: 35px;
-            border: 1px solid black; 
+        td {
+            padding-left: 10px !important;
+            height: 25px;
+            border: 1px solid black;
             padding: 3px
         }
-        tr{
-            border: 1px solid black; 
+
+        tr {
+            border: 1px solid black;
         }
 
         .column-title {
             font-weight: bold;
         }
 
-        /*
-        .first-column{
-            font-size:18px;
-        }
-        */
         .topic {
-            background-color: grey;
+            background-color: #E8E8E8;
+            font-weight: bold;
+            padding-left: 7px;
         }
-        th{
-            height: 35px;
+
+        th {
+            height: 25px;
+        }
+        .project-no{
+            font-size: 20px;
+        }
+        .center{
+            text-align: center  !important;
         }
     </style>
 </head>
 
 <body>
-    <table class="first-table" border="1 ">
+
+    <table class="first-table" border="1">
         <tr>
-            <td style="text-align:left;width:16.6%"><span class="project-name" style="font-size: 22px;color:black">Proje
-                    No:</span><span class="project-no" style="font-size: 20px;color:black"> 279952</span></td>
-            <td style="text-align:left;color:black"><span class="project-name" style="font-size: 22px;color:black">Proje
-                    Adı:</span><span style="font-size: 20px;color:black" class="project-no"> TT
-                    MobilPort FrontEnd</span> </td>
+            <td style="text-align:left;width:22.2%">
+                <span class="project-name">Proje No:</span>
+                <span class="project-no"> 279952</span>
+            </td>
+            <td style="text-align:left">
+                <span class="project-name">Proje Adı:</span>
+                <span class="project-no"> TT MobilPort FrontEnd</span> 
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1" style="text-align:center">
+        <caption class="table-title">Projeye Genel Bakış</caption>
+            <tr class="column-title" style="background-color: #E8E8E8;">
+                <td>Proje Grubu</td>
+                <td>Proje Yöneticisi</td>
+                <td>Müşteri</td>
+                <td>Proje Tipi</td>
+                <td>Proje Aşaması</td>
+                <td>Proje Segmenti</td>
+                <td>Statik Proje</td>
+                <td>Tamamlanma % (Takvim)</td>
+                <td>Tamamlanma % (Efor)</td>
+            </tr>
+            <tr>
+                <td>Kullanıcı Deneyimi ve Cross Platform</td>
+                <td>Gizem Şenalp</td>
+                <td>Türk Telekom A.Ş</td>
+                <td>Üretim Yazılım Geliştirme </td>
+                <td>Yürütme</td>
+                <td>C (9)</td>
+                <td>Hayır</td>
+                <td>79.83</td>
+                <td>82.57</td>
+            </tr>
+    </table>
+    <br>
+
+    <table>
+        <tr>
+            <td class="topic">SPI</td>
+            <td style="font-weight: bold;">79.83</td>
+            <td class="topic">CPI</td>
+            <td style="font-weight: bold;">82.57</td>
+            <td class="topic">Proje RAG</td>
+            <td style="font-weight: bold;">0.9769</td>
+
+        </tr>
+        <tr>
+            <td class="topic">Durum</td>
+            <td >Yeşil</td>
+            <td class="topic">Durum</td>
+            <td >Yeşil</td>
+            <td class="topic">Durum</td>
+            <td>&nbsp;</td>
+
         </tr>
     </table>
 
     <br>
 
     <table border="1">
-        <caption class="table-title" style="text-align:left;">Projeye Genel Bakış</caption>
-        <tr>
-            <td class="column-title first-column" style="text-align:left;">Proje Grubu </td>
-            <td> Kullanıcı Deneyimi ve Cross Platform </td>
-            <td class="column-title"> Proje Tipi </td>
-            <td> Üretim.Yazılım Geliştirme </td>
-            <td class="column-title"> Proje Segmenti </td>
-            <td>C (9) </td>
-        </tr>
-        <tr>
-            <td class="column-title first-column" style="text-align:left"> Proje Yöneticisi </td>
-            <td> Gizem Şenalp </td>
-            <td class="column-title"> Proje Aşaması </td>
-            <td> Yürütme </td>
-            <td class="column-title"> Stratejik Proje </td>
-            <td> Hayır </td>
-        </tr>
-        <tr>
-            <td class="column-title first-column">Müşteri</td>
-            <td>Türk Telekom A.Ş</td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-        </tr>
-        <tr>
-            <td class="column-title" style="text-align:left">Tamamlanma % (Takvim)</td>
-            <td class="column-title" style="text-align:left">Tamamlanma % (Efor)</td>
-            <td></td>             <!-- rowspan="2"-->
-            
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="column-title" style="text-align:center">79.83</td>
-            <td style="text-align:center;font-weight: bold;">82.57</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-
-    </table>
-    <br>
-
-    <table border="1">
-        <caption class="column-title table-title" style="text-align:left;">Proje Performansı</caption>
-        <tr class="first-column column-title" style="text-align:center">
+        <caption class="column-title table-title">Proje Performansı</caption>
+        <tr class="first-column column-title" style="text-align:center;background-color: #E8E8E8">
             <td></td>
             <td></td>
             <td>Proje Teklif Bilgileri</td>
@@ -134,7 +151,7 @@
             <td>Öngörülen</td>
         </tr>
         <tr>
-            <td class="column-title" >Takvim</td>
+            <td class="column-title topic">Takvim</td>
             <td class="column-title" style="font-style: italic;">Tamamlanma Tarihi</td>
             <td style="text-align:center">31-08-2021</td>
             <td style="text-align:center">30-06-2021</td>
@@ -143,134 +160,135 @@
             <td style="text-align:center">30-06-2021</td>
         </tr>
         <tr>
-            <td class="column-title">Efor</td>
-            <td class="column-title" style="font-style: italic">Adam Gün</td>
+            <td class="column-title topic">Efor</td>
+            <td class="column-title" style="font-style: italic;">Adam Gün</td>
             <td style="text-align:center">378</td>
             <td style="text-align:center">436.75</td>
             <td style="text-align:center">436.75</td>
             <td style="text-align:center">332.69</td>
             <td style="text-align:center">436.75</td>
         </tr>
+        <tr>
+            <td class="column-title table-title" style="text-align:left" colspan="7">Finansal</td>
 
+        </tr>
+        <tr>
+            <td class="column-title first-column topic ">Gelir</td>
+            <td class="center">TL</td>
+            <td class="center">640,080</td>
+            <td class="center">523,001</td>
+            <td class="center">523,001</td>
+            <td class="center">523,001</td>
+            <td class="center">640,000</td>
+        </tr>
+        <tr>
+            <td class="column-title first-column topic">İç Maliyet</td>
+            <td class="center">TL</td>
+            <td class="center">550,812</td>
+            <td class="center">523,001</td>
+            <td class="center">523,001</td>
+            <td class="center">452,653</td>
+            <td class="center">590,537</td>
+
+        </tr>
+        <tr>
+            <td class="column-title first-column topic">Dış Maliyet</td>
+            <td class="center">TL</td>
+            <td class="center">0</td>
+            <td class="center">523,001</td>
+            <td class="center">523,001</td>
+            <td class="center">0</td>
+            <td class="center">0</td>
+        </tr>
+        <tr>
+            <td class="column-title first-column topic" >Kar</td>
+            <td class="center">TL</td>
+            <td class="center">89268</td>
+            <td class="center">523,001</td>
+            <td class="center">523,001</td>
+            <td class="center">70,348</td>
+            <td class="center">49,463</td>
+        </tr>
+        <tr>
+            <td class="column-title first-column topic">Kar Marjı</td>
+            <td class="center">%</td>
+            <td class="center">14</td>
+            <td class="center">523,001</td>
+            <td class="center">523,001</td>
+            <td class="center">13.45</td>
+            <td class="center">7.73</td>
+        </tr>
     </table>
     <br>
 
-    <table border="1" style="text-align:center">
-        <caption class="table-title" style="text-align:left;">Finansal</caption>
-        <tr>
-            <td class="column-title first-column" style="text-align:left">Gelir</td>
-            <td>TL</td>
-            <td>640,080</td>
-            <td></td>
-            <td></td>
-            <td>523,001</td>
-            <td>640,000</td>
-        </tr>
-        <tr>
-            <td class="column-title first-column" style="text-align:left">İç Maliyet</td>
-            <td>TL</td>
-            <td>550,812</td>
-            <td></td>
-            <td></td>
-            <td>452,653</td>
-            <td>590,537</td>
-
-        </tr>
-        <tr>
-            <td class="column-title first-column" style="text-align:left">Dış Maliyet</td>
-            <td>TL</td>
-            <td>0</td>
-            <td></td>
-            <td></td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td class="column-title first-column" style="text-align:left">Kar</td>
-            <td>TL</td>
-            <td>89268</td>
-            <td></td>
-            <td></td>
-            <td>70,348</td>
-            <td>49,463</td>
-        </tr>
-        <tr>
-            <td class="column-title first-column" style="text-align:left">Kar Marjı</td>
-            <td>%</td>
-            <td>14</td>
-            <td></td>
-            <td></td>
-            <td>13.45</td>
-            <td>7.73</td>
-        </tr>
-
-
-    </table>
-    <br>
 
     <table border="1">
         <caption class="table-title" style="text-align:left;">Proje Durum Özeti</caption>
         <tr>
-            <td style="padding:10px">Tamamlanan Çalışmalar: FAZ 1 Entegrasyonlar: Netmera / SMS / AD Prod Kurulumları
-                Faz 1 kapsamında
-                belirlenen talepler İç Fonksiyonel testler TT Güvenlik – Kaynak kod testleri Canlıya Alım– 30.12.2020
-                Faz 1 Kapanış – 17.01.2021 FAZ 2 SAP entegrasyonu tasarım çalışmaları Analiz çalışmaları Faz 2 – Push
-                Notification entegrasyonu Faz 2 – Regresyon testleri Faz 2 – UAT /Performans Testi / Güvenlik Testi Faz
-                2 – Go Live (19.03.2021 – erken devreye alım) Faz 2 – Lansman (28.04.2021) FAZ 3 Faz 3 – Analiz Faz 3 –
-                Proje Planı Netleştirme Devam Eden ve GelecekDönem için Planlanan İşler Faz 3 – Geliştirme (devam
-                ediyor) Faz 3 – Fonksiyonel Testler Faz 3 – UAT, Güvenlik, Performans Testleri Faz 3 – Regresyon Testi
-                Faz3 – Devreye Alım Proje Kapanışı</td>
+            <td >
+                <ul>
+                    <li>Tamamlanan Çalışmalar: FAZ 1 Entegrasyonlar: Netmera / SMS / AD Prod Kurulumları Faz 1 kapsamında belirlenen talepler İç Fonksiyonel testler TT Güvenlik</li>
+                    <li>Kaynak kod testleri Canlıya Alım</li>
+                    <li>30.12.2020 Faz 1 Kapanış – 17.01.2021 FAZ 2 SAP entegrasyonu tasarım çalışmaları Analiz çalışmaları Faz 2</li>
+                    <li>Push Notification entegrasyonu Faz 2</li>
+                    <li>Regresyon testleri Faz 2 – UAT /Performans Testi</li>
+
+                </ul>
+            </td>
         </tr>
     </table>
     <br>
 
-    <table border="1" class="column-title" style="text-align:center">
-        <tr style="background-color: grey;">
+    <table border="1"  style="text-align:center">
+        <tr class="column-title" style="background-color: #E8E8E8;">
             <th>Temel Kilometre Taşları / Teslimatlar</th>
             <th>Onaylanan Tamamlama</th>
             <th>Öngörülen Tamamlama</th>
             <th>Özet</th>
         </tr>
         <tr>
-            <td>&nbsp;</td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>&nbsp;</td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>İç Fonksiyonel testler</td>
+            <td>İç Fonksiyonel testler</td>
+            <td>İç Fonksiyonel testler</td>
+            <td>İç Fonksiyonel testler</td>
         </tr>
     </table>
     <br>
 
     <table border="1">
-        <tr style="background-color: grey;">
+        <tr style="background-color: #E8E8E8;">
             <th class="column-title">Bu Raporlama Döneminde Tamamlananlar</th>
             <th class="column-title">Sonraki Raporlama DönemindeTamamlanacaklar</th>
         </tr>
         <tr>
-            <td>FAZ 2 <br>
-                Faz 2 – Go Live (19.03.2021 – erken devreye alım) <br>
-                Faz 2 – Lansman (28.04.2021) <br>
-                FAZ 3 <br>
-                Faz 3 – Analiz <br>
-                Faz 3 – Proje Planı Netleştirme<br>
+            <td>
+               <ul>
+                   <li>FAZ 2</li>
+                   <li>Faz 2 – Go Live (19.03.2021 – erken devreye alım)</li>
+                   <li>Faz 2 – Lansman (28.04.2021)</li>
+                   <li>FAZ 3</li>
+                   <li>Faz 3 – Analiz</li>
+                   <li>Faz 3 – Proje Planı Netleştirme</li>
+               </ul>
             </td>
-            <td>Faz 3 – Geliştirme (devam ediyor) (UAT veGüvenlik Testleri için 4 Haziran yerine 24 Mayıs'taerken
-                teslimat yapılacaktır) <br>
-                Faz 3 – Fonksiyonel Testler (devam ediyor -Regresyon Testleri dahil 21 Mayıs'tatamamlanacak) <br>
-                Faz 3 - Performans Testleri, Güvenlik Testleri veUAT (başlayacak) <br>
-            </td>
+            <td>
+                <ul>
+                    <li>Faz 3 – Geliştirme (devam ediyor) (UAT veGüvenlik Testleri için 4 Haziran yerine 24 Mayıs'taerken teslimat yapılacaktır)</li>
+                    <li>Faz 2 – Go Live (19.03.2021 – erken devreye alım)</li>
+                    <li>Faz 2 – Lansman (28.04.2021)</li>
+                    <li>FAZ 3</li>
+                    <li>Faz 3 – Analiz</li>
+                    <li>Faz 3 – Proje Planı Netleştirme</li>
+                </ul>
+             </td>
         </tr>
     </table>
     <br>
     <br>
 
-    <table class="column-title" border="1" >
-        <tr style="background-color: grey;">
+    <table border="1">
+        <caption class="column-title table-title">Risk/Sorun</caption>
+        <tr class="column-title" style="background-color: #E8E8E8;">
             <th>ID</th>
             <th>Tarih</th>
             <th>Risk Açıklaması</th>
@@ -281,23 +299,22 @@
             <th>Sahibi</th>
             <th>Durum</th>
         </tr>
-        <tr>
-            <td>&nbsp;</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-
+        <tr class="center">
+            <td>4754544</td>
+            <td>Performans Testleri</td>
+            <td>Performans Testleri</td>
+            <td>Performans Testleri</td>
+            <td>Performans Testleri</td>
+            <td>Performans Testleri</td>
+            <td>Performans Testleri</td>
+            <td>Performans Testleri</td>
+            <td>Performans Testleri</td>
         </tr>
     </table>
     <br>
 
-    <table class="column-title" border="1">
-        <tr style="background-color: grey;">
+    <table  border="1">
+        <tr class="column-title" style="background-color: #E8E8E8;">
             <th>ID</th>
             <th>Tarih</th>
             <th>Sorun Açıklaması</th>
@@ -308,17 +325,16 @@
             <th>Sahibi</th>
             <th>Durum</th>
         </tr>
-        <tr>
-            <td>&nbsp;</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-
+        <tr class="center">
+            <td >4754544</td>
+            <td> Performans Testleri</td>
+            <td> Performans Testleri</td>
+            <td> Performans Testleri</td>
+            <td>Performans Testleri</td>
+            <td>Performans Testleri</td>
+            <td>Performans Testleri</td>
+            <td>Performans Testleri</td>
+            <td>Performans Testleri</td>
         </tr>
     </table>
 
