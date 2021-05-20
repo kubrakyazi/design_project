@@ -69,6 +69,32 @@
         .center{
             text-align: center  !important;
         }
+        .radio{
+            width: 20px !important;
+
+        }
+        input.radio{
+            width: 20px;
+        }
+        .status {
+        background-color:green;
+        height: 25px;
+        border-radius:75px;
+        width: 25px;
+        display: inline-block;
+        }
+
+        .red{
+            background-color: red;
+        }
+
+        .yellow{
+            background-color: yellow;
+        }
+
+        .green{
+            background-color: green
+        }
     </style>
 </head>
 
@@ -128,15 +154,28 @@
         </tr>
         <tr>
             <td class="topic">Durum</td>
-            <td >Yeşil</td>
+            <td >
+                <div class="status red" style="text-align:center"></div>
+                <div class="status yellow" style="text-align:center"></div>
+                <div class="status green" style="text-align:center"></div>
+            </td>
             <td class="topic">Durum</td>
-            <td >Yeşil</td>
+            <td > 
+                <div class="status red" style="text-align:center"></div>
+                <div class="status yellow" style="text-align:center"></div>
+                <div class="status green" style="text-align:center"></div>
+            </td>
+            </td>
             <td class="topic">Durum</td>
-            <td>&nbsp;</td>
+            <td>
+                <div class="status red" style="text-align:center"></div>
+                <div class="status yellow" style="text-align:center"></div>
+                <div class="status green" style="text-align:center"></div>
+            </td>
+            </td>
 
         </tr>
     </table>
-
     <br>
 
     <table border="1">
@@ -170,7 +209,6 @@
         </tr>
         <tr>
             <td class="column-title table-title" style="text-align:left" colspan="7">Finansal</td>
-
         </tr>
         <tr>
             <td class="column-title first-column topic ">Gelir</td>
@@ -220,7 +258,6 @@
         </tr>
     </table>
     <br>
-
 
     <table border="1">
         <caption class="table-title" style="text-align:left;">Proje Durum Özeti</caption>
@@ -339,5 +376,4 @@
     </table>
 
 </body>
-
 </html>
